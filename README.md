@@ -55,17 +55,64 @@
 
 ## Как создать ветку
 
-в разработке
+Склонировав проект из гитхаба переходим во вкладку Repositories и создаём новую ветку (в качестве названия рекомендуется использовать название реализуемого функционала-таска):
+
+<kbd>
+  <img src="/ReadMe/Img/newBranch.png" height=200>
+</kbd>
 
 ## Как слить ветку
 
-в разработке
+После внесения изменений в проект делаем комит (без пуша).
+Переходим в ветку main:
+
+<kbd>
+  <img src="/ReadMe/Img/switchBranch.png" height=200>
+</kbd>
+
+И делаем слияние:
+
+<kbd>
+  <img src="/ReadMe/Img/merge.png" height=200>
+</kbd>
+
+После этого можно сделать Push в свой гитхаб
 
 ## Как сделать Пулреквест
 
-в разработке
+Перед созданием пул реквеста необходимо синхронизировать свой репозиторий из общего:
 
+<kbd>
+  <img src="/ReadMe/Img/syncFork.png" height=200>
+</kbd>
 
+<kbd>
+  <img src="/ReadMe/Img/updateBranch.png" height=200>
+</kbd>
 
+Теперь жмём Contribute:
 
+<kbd>
+  <img src="/ReadMe/Img/contribute.png" height=200>
+</kbd>
+
+И открываем пул реквест:
+
+<kbd>
+  <img src="/ReadMe/Img/openPullRequest.png" height=200>
+</kbd>
+
+Выбераем ветку в которую вносим изменения (всегда main) и из какой (тоже main):
+
+<kbd>
+  <img src="/ReadMe/Img/createPullRequest.png" height=200>
+</kbd>
+
+Добавляем заголовок и описание для своих изменений, после жмём **Create pull request**:
+
+<kbd>
+  <img src="/ReadMe/Img/addTitlePullRequest.png" height=200>
+</kbd>
+
+Пул реквест отправляется на проверку. После утверждения всеми, кто до этого брал на себя задачи и форкал основной репозиторий, изменения зальются в общий гитхаб. 
 
