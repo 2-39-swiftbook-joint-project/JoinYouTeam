@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		116E67482B44B04500EFE496 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116E67472B44B04500EFE496 /* Creator.swift */; };
 		11E0E5162B36D797003C5EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E0E5152B36D797003C5EB2 /* AppDelegate.swift */; };
 		11E0E5182B36D797003C5EB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E0E5172B36D797003C5EB2 /* SceneDelegate.swift */; };
 		11E0E51A2B36D797003C5EB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E0E5192B36D797003C5EB2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		116E67472B44B04500EFE496 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
 		11E0E5122B36D797003C5EB2 /* JoinYouTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoinYouTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E0E5152B36D797003C5EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E0E5172B36D797003C5EB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116E67492B44B05200EFE496 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				116E67472B44B04500EFE496 /* Creator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		11E0E5092B36D797003C5EB2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +66,10 @@
 		11E0E5142B36D797003C5EB2 /* JoinYouTeam */ = {
 			isa = PBXGroup;
 			children = (
-				11E0E5292B36D8EC003C5EB2 /* App */,
 				11E0E52A2B36D8F7003C5EB2 /* ViewControllers */,
 				11E0E52B2B36D909003C5EB2 /* Storyboards */,
+				116E67492B44B05200EFE496 /* Models */,
+				11E0E5292B36D8EC003C5EB2 /* App */,
 				11E0E51E2B36D798003C5EB2 /* Assets.xcassets */,
 			);
 			path = JoinYouTeam;
@@ -162,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				116E67482B44B04500EFE496 /* Creator.swift in Sources */,
 				11E0E51A2B36D797003C5EB2 /* ViewController.swift in Sources */,
 				11E0E5162B36D797003C5EB2 /* AppDelegate.swift in Sources */,
 				11E0E5182B36D797003C5EB2 /* SceneDelegate.swift in Sources */,
