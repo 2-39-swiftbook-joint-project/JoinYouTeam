@@ -11,42 +11,69 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+                
+        UIView.appearance().tintColor = .SwiftBook.orange
+        
+        let navBarApperance = UINavigationBarAppearance()
+        let gradient: CAGradientLayer = SceneDelegate.getHorizontalGradient(
+            leftColor: .SwiftBook.pink,
+            rightColor: .SwiftBook.orange
+        )
+        let image: UIImage! = SceneDelegate.getImageFrom(gradient)
+        navBarApperance.backgroundColor = UIColor(patternImage: image)
+        
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarApperance
+        UINavigationBar.appearance().tintColor = .white
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        // Called as the scene is being released by the system.
-        // This occurs shortly after the scene enters the background, or when its session is discarded.
-        // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
     }
-
-
+    
+    private class func getHorizontalGradient(leftColor: UIColor, rightColor: UIColor) -> CAGradientLayer {
+        let gradient = CAGradientLayer()
+        gradient.frame = UIScreen.main.bounds
+        gradient.colors = [leftColor.cgColor, rightColor.cgColor]
+        gradient.locations = [0.0, 1.0]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 0)
+        
+        return gradient
+    }
+    
+    private class func getImageFrom(_ gradientLayer: CAGradientLayer) -> UIImage? {
+        var gradientImage: UIImage?
+        
+        UIGraphicsBeginImageContext(gradientLayer.bounds.size)
+        if let context = UIGraphicsGetCurrentContext() {
+            gradientLayer.render(in: context)
+            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
+        }
+        UIGraphicsEndImageContext()
+        
+        return gradientImage
+    }
 }
 
+// MARK: - UIColor extension
+extension UIColor {
+    struct SwiftBook {
+        static let orange = UIColor.init(red: 236/255, green: 109/255, blue: 67/255, alpha: 1.0)
+        static let pink = UIColor.init(red: 221/255, green: 84/255, blue: 130/255, alpha: 1.0)
+        static let purple = UIColor.init(red: 82/255, green: 69/255, blue: 194/255, alpha: 1.0)
+        static let blue = UIColor.init(red: 45/255, green: 54/255, blue: 169/255, alpha: 1.0)
+    }
+}

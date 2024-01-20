@@ -15,7 +15,7 @@ struct Creator {
             Creator(
                 name: "Nikita",
                 githubAccount: "@nikmosyl",
-                about: "Creator Model, AboutMe Screen"
+                about: "Creator Model, AboutUs Screen, SceneDelegate"
             ),
             Creator(
                 name: "your name",
