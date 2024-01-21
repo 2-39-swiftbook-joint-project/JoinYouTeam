@@ -18,8 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navBarApperance = UINavigationBarAppearance()
         let gradient: CAGradientLayer = SceneDelegate.getHorizontalGradient(
-            leftColor: .SwiftBook.pink,
-            rightColor: .SwiftBook.orange
+            leftColor: .SwiftBook.orange,
+            rightColor: .SwiftBook.pink
         )
         let image: UIImage! = SceneDelegate.getImageFrom(gradient)
         navBarApperance.backgroundColor = UIColor(patternImage: image)
@@ -60,7 +60,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UIGraphicsBeginImageContext(gradientLayer.bounds.size)
         if let context = UIGraphicsGetCurrentContext() {
             gradientLayer.render(in: context)
-            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
+            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(
+                withCapInsets: UIEdgeInsets.zero,
+                resizingMode: .stretch
+            )
         }
         UIGraphicsEndImageContext()
         

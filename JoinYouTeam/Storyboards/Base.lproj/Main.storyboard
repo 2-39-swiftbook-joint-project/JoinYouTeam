@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="unV-e7-PBa">
-                                <rect key="frame" x="16" y="156.5" width="288" height="184.5"/>
+                                <rect key="frame" x="16" y="206.5" width="288" height="134.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glc-pm-Y1i">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
@@ -29,15 +29,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Команда (если есть)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-Qx-mEL">
-                                        <rect key="frame" x="0.0" y="100" width="288" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcH-Cc-1ng">
-                                        <rect key="frame" x="0.0" y="150" width="288" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="100" width="288" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
+                                        <connections>
+                                            <segue destination="SZU-uX-Zvb" kind="show" id="FSA-jj-7RB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -53,12 +51,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Привет!" id="Odd-PZ-pAs">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="F9I-nc-7Jz"/>
-                        <barButtonItem key="rightBarButtonItem" title="Разработчики" id="JRX-o1-QX7">
+                        <barButtonItem key="rightBarButtonItem" title="О разработчиках" id="JRX-o1-QX7">
                             <connections>
                                 <segue destination="Vva-vy-t8k" kind="show" id="Lra-LU-p6s"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="githubTF" destination="FEf-jE-Lnn" id="9Fj-pk-jgY"/>
+                        <outlet property="loginButton" destination="AcH-Cc-1ng" id="zFL-JR-itx"/>
+                        <outlet property="nameTF" destination="glc-pm-Y1i" id="gTE-7T-dN5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,6 +76,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTk-Rk-hbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="-260"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="50W-8e-JKp">
+            <objects>
+                <viewController id="SZU-uX-Zvb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="di7-ph-o7S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3f-3O-Bbd">
+                                <rect key="frame" x="136.5" y="273.5" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zRk-9N-RTL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c3f-3O-Bbd" firstAttribute="centerY" secondItem="di7-ph-o7S" secondAttribute="centerY" id="Jcw-Ep-fHU"/>
+                            <constraint firstItem="c3f-3O-Bbd" firstAttribute="centerX" secondItem="di7-ph-o7S" secondAttribute="centerX" id="Pt3-jV-kmB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gXH-Qz-Lpi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJn-Ws-mC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mtm-hC-Q2T">
