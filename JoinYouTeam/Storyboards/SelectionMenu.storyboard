@@ -168,7 +168,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Вступить в команду"/>
                                 <connections>
-                                    <action selector="joinTeamButtonTapped:" destination="sBn-Qe-31t" eventType="touchUpInside" id="WR8-BY-hfs"/>
                                     <segue destination="2Rc-bg-8ne" kind="show" id="LR1-Y1-Rqa"/>
                                 </connections>
                             </button>

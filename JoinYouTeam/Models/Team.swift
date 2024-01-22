@@ -10,7 +10,7 @@ final class Team {
     let projectName: String
     let projectDescription: String
     let maximumNumberOfDevelopers: Int?
-    var developers: [Developer] = []
+    let developers: [Developer] = []
     
     init(
         name: String,
@@ -23,6 +23,5 @@ final class Team {
         self.projectName = projectName
         self.projectDescription = projectDescription
         self.maximumNumberOfDevelopers = maximumNumberOfDevelopers
-        self.developers = developers
     }
 }

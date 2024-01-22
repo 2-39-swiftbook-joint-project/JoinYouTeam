@@ -21,10 +21,7 @@ final class TeamDetailsViewController: UIViewController {
         teamLabel.text = "Название команды: \(team.name)"
         projectLabel.text = "Название проекта: \(team.projectName)"
         descriptionLabel.text = "Тема проекта: \(team.projectDescription)"
-  //      membersLabel.text = "Участники проекта: "
-        
-  //      @IBAction func joinTeamButtonTapped(_ sender: Any) {
-            
-        //}
+        membersLabel.text = "Количество участников: \(team.developers.count)"
+
     }
 }

@@ -15,7 +15,7 @@ final class SelectionMenuViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func randomTeamButtonTapped(_ sender: Any) {
+    @IBAction func randomTeamButtonTapped() {
         
     }
 }
