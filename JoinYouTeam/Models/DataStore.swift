@@ -34,14 +34,14 @@ final class DataStore {
     
     var creators: [Creator] = [
         Creator(
-            name: "your name",
-            githubAccount: "your github account",
-            about: "your tasks"
+            name: "Ксения",
+            githubAccount: "@Xenia-Xenia",
+            about: "SelectionMenuViewController, TeamListViewController, TeamCreationViewController, AboutMeViewController, TeamDetailsViewController, SelectionMenu screen, AboutMe screen"
         ),
         Creator(
-            name: "Nikita",
+            name: "Никита",
             githubAccount: "@nikmosyl",
-            about: "Creator Model, AboutUs Screen, SceneDelegate"
+            about: "SceneDelegate, Models, DataStore, AboutUs screen, Login screen, TabBar screen"
         )
     ]
     

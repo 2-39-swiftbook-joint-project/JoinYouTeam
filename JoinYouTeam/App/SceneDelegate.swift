@@ -15,17 +15,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
                 
         UIView.appearance().tintColor = .SwiftBook.orange
-        
+
         let navBarApperance = UINavigationBarAppearance()
-        let gradient: CAGradientLayer = SceneDelegate.getHorizontalGradient(
+        let lightGradient: CAGradientLayer = SceneDelegate.getHorizontalGradient(
             leftColor: .SwiftBook.orange,
             rightColor: .SwiftBook.pink
         )
-        let image: UIImage! = SceneDelegate.getImageFrom(gradient)
-        navBarApperance.backgroundColor = UIColor(patternImage: image)
-        
+        let lightImage: UIImage! = SceneDelegate.getImageFrom(lightGradient)
+        navBarApperance.backgroundColor = UIColor(patternImage: lightImage)
         UINavigationBar.appearance().scrollEdgeAppearance = navBarApperance
+        UINavigationBar.appearance().standardAppearance = navBarApperance
+        UINavigationBar.appearance().compactAppearance = navBarApperance
+        UINavigationBar.appearance().compactScrollEdgeAppearance = navBarApperance
         UINavigationBar.appearance().tintColor = .white
+        
+        let tabBarApperance = UITabBarAppearance()
+        let darkGradient: CAGradientLayer = SceneDelegate.getHorizontalGradient(
+            leftColor: .SwiftBook.purple,
+            rightColor: .SwiftBook.blue
+        )
+        let darkImage: UIImage! = SceneDelegate.getImageFrom(darkGradient)
+        tabBarApperance.backgroundColor = UIColor(patternImage: darkImage)
+        UITabBar.appearance().scrollEdgeAppearance = tabBarApperance
+        UITabBar.appearance().standardAppearance = tabBarApperance
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

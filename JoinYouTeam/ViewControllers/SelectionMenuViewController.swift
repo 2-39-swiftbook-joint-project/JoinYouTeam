@@ -9,6 +9,7 @@ import UIKit
 
 final class SelectionMenuViewController: UIViewController {
     
+    var user: Developer!
     
     @IBOutlet var joinTeamButton: UIButton!
     @IBOutlet var createTeamButton: UIButton!

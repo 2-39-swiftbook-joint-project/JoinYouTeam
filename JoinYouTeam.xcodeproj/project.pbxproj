@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1136EEAB2B5F0CF2008326BA /* CreatorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEAA2B5F0CF2008326BA /* CreatorListViewController.swift */; };
+		1136EEAD2B5F1C44008326BA /* DeveloperListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEAC2B5F1C44008326BA /* DeveloperListViewController.swift */; };
+		1136EEAF2B5F2A61008326BA /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEAE2B5F2A61008326BA /* DeveloperViewController.swift */; };
+		1136EEB12B5F2D7F008326BA /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEB02B5F2D7F008326BA /* UserViewController.swift */; };
 		116A2A062B5ECF0C0042F1EE /* TabBarSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116A2A052B5ECF0C0042F1EE /* TabBarSB.storyboard */; };
 		116A2A082B5ED2130042F1EE /* UserSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116A2A072B5ED2130042F1EE /* UserSB.storyboard */; };
 		116A2A0A2B5ED28F0042F1EE /* DevelopersSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116A2A092B5ED28F0042F1EE /* DevelopersSB.storyboard */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1136EEAA2B5F0CF2008326BA /* CreatorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorListViewController.swift; sourceTree = "<group>"; };
+		1136EEAC2B5F1C44008326BA /* DeveloperListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperListViewController.swift; sourceTree = "<group>"; };
+		1136EEAE2B5F2A61008326BA /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		1136EEB02B5F2D7F008326BA /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		116A2A052B5ECF0C0042F1EE /* TabBarSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarSB.storyboard; sourceTree = "<group>"; };
 		116A2A072B5ED2130042F1EE /* UserSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSB.storyboard; sourceTree = "<group>"; };
 		116A2A092B5ED28F0042F1EE /* DevelopersSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevelopersSB.storyboard; sourceTree = "<group>"; };
@@ -125,6 +133,10 @@
 				1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */,
 				1D44F4662B5DE47E00F9D4EA /* AboutMeViewController.swift */,
 				1DEDD76B2B5E6DB4004140A8 /* TeamDetailsViewController.swift */,
+				1136EEAA2B5F0CF2008326BA /* CreatorListViewController.swift */,
+				1136EEAC2B5F1C44008326BA /* DeveloperListViewController.swift */,
+				1136EEAE2B5F2A61008326BA /* DeveloperViewController.swift */,
+				1136EEB02B5F2D7F008326BA /* UserViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -133,13 +145,13 @@
 			isa = PBXGroup;
 			children = (
 				11E0E5202B36D798003C5EB2 /* LaunchScreen.storyboard */,
-				1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */,
-				11E0E51B2B36D797003C5EB2 /* Main.storyboard */,
 				118DD2002B5BDFEC00C3B843 /* AboutUsSB.storyboard */,
+				11E0E51B2B36D797003C5EB2 /* Main.storyboard */,
 				116A2A052B5ECF0C0042F1EE /* TabBarSB.storyboard */,
 				116A2A092B5ED28F0042F1EE /* DevelopersSB.storyboard */,
 				1D44F4342B5DCCDA00F9D4EA /* SelectionMenu.storyboard */,
 				116A2A072B5ED2130042F1EE /* UserSB.storyboard */,
+				1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -222,7 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				118677D52B5D6E90007D49F4 /* Developer.swift in Sources */,
+				1136EEB12B5F2D7F008326BA /* UserViewController.swift in Sources */,
+				1136EEAD2B5F1C44008326BA /* DeveloperListViewController.swift in Sources */,
+				1136EEAF2B5F2A61008326BA /* DeveloperViewController.swift in Sources */,
 				1DEDD76C2B5E6DB4004140A8 /* TeamDetailsViewController.swift in Sources */,
+				1136EEAB2B5F0CF2008326BA /* CreatorListViewController.swift in Sources */,
 				116E67482B44B04500EFE496 /* Creator.swift in Sources */,
 				1D44F4392B5DCCFB00F9D4EA /* SelectionMenuViewController.swift in Sources */,
 				118677D72B5D6E9A007D49F4 /* Team.swift in Sources */,

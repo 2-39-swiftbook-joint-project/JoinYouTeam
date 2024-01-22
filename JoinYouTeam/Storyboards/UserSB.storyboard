@@ -11,7 +11,8 @@
         <!--Инфо-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="UserStoryBoard" title="Инфо" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="UserStoryBoard" title="Инфо" id="Y6W-OH-hqX" customClass="UserViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,9 +34,8 @@
                     <tabBarItem key="tabBarItem" title="Инфо" image="info.bubble.fill" catalog="system" id="EVY-O9-SSa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="4"/>
+            <point key="canvasLocation" x="-152" y="-4"/>
         </scene>
     </scenes>
     <resources>
