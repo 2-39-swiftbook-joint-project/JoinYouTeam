@@ -99,9 +99,9 @@
         <!--Список команд-->
         <scene sceneID="S8l-OQ-aZB">
             <objects>
-                <tableViewController storyboardIdentifier="TeamSelectionTableViewController" id="2Ef-XT-BON" customClass="TeamSelectionTableViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TeamSelectionTableViewController" id="2Ef-XT-BON" customClass="TeamListViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4ys-bV-Md8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -113,7 +113,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="sBn-Qe-31t" kind="show" id="WJL-YZ-Hst"/>
+                                    <segue destination="sBn-Qe-31t" kind="show" identifier="showDetails" id="WJL-YZ-Hst"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -133,9 +133,9 @@
         <!--Команда-->
         <scene sceneID="chR-Sk-kGb">
             <objects>
-                <viewController id="sBn-Qe-31t" customClass="TeamSelectionTableViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sBn-Qe-31t" customClass="TeamDetailsViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQi-kh-FjV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5Z0-VU-0yT">
@@ -193,6 +193,9 @@
                                 <rect key="frame" x="16" y="483.5" width="288" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Вступить в команду"/>
+                                <connections>
+                                    <action selector="joinTeamButtonTapped:" destination="sBn-Qe-31t" eventType="touchUpInside" id="WR8-BY-hfs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fkU-ei-JQb"/>
@@ -207,6 +210,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Команда" id="vxb-DD-vp2"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="bkJ-wQ-pjB" id="UlO-fF-Ohs"/>
+                        <outlet property="joinTeamButton" destination="NPV-d9-PnK" id="zgC-vs-BnT"/>
+                        <outlet property="membersNumberLabel" destination="jgS-lR-FUq" id="T8m-T1-d8q"/>
+                        <outlet property="projectLabel" destination="4O8-PK-nXx" id="VW6-YT-7cW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uef-lZ-3xE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,7 +226,7 @@
             <objects>
                 <viewController storyboardIdentifier="TeamCreationViewController" id="wDd-dy-4oe" customClass="TeamCreationViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKB-dq-PHV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fqB-Hp-Cze">
@@ -263,6 +272,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4CG-po-dxv"/>
+                    <connections>
+                        <outlet property="membersNumberTF" destination="dT0-cC-wFE" id="oYO-a9-6Pl"/>
+                        <outlet property="projectTF" destination="LLs-kS-5b2" id="yX8-tW-0sy"/>
+                        <outlet property="subjectTF" destination="kWU-cA-pIl" id="4ac-sv-1qQ"/>
+                        <outlet property="teamTF" destination="vDg-PX-cCx" id="AoO-uH-KVZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMX-cy-9YD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
