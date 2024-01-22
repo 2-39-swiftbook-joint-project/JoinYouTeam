@@ -56,7 +56,8 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="avt-mU-CKA" secondAttribute="trailing" constant="16" id="mYh-20-LLg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="La5-rd-H83"/>
+                    <tabBarItem key="tabBarItem" title="Команды" image="person.2.fill" catalog="system" id="TXX-ny-Qwn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="createTeamButton" destination="t0t-VD-ApC" id="eyi-wY-nG8"/>
                         <outlet property="joinTeamButton" destination="TNR-G8-E4U" id="2pD-gW-oID"/>
@@ -256,6 +257,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.2.fill" catalog="system" width="128" height="86"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

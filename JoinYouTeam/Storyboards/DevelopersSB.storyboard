@@ -30,6 +30,8 @@
                             <constraint firstItem="ySJ-9H-Wfh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="pua-35-25s"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Разработчики" image="person.fill" catalog="system" id="HgQ-SS-qZh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
