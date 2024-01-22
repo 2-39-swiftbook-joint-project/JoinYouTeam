@@ -8,11 +8,9 @@
 final class Developer {
     let name: String
     let github: String
-    weak var team: Team?
     
-    init(name: String, github: String, team: Team? = nil) {
+    init(name: String, github: String) {
         self.name = name
         self.github = github
-        self.team = team
     }
 }

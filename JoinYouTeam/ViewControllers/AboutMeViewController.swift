@@ -11,6 +11,8 @@ final class AboutMeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBarItem.title = "Обо мне"
+        tabBarItem.image = UIImage(systemName: "person.circle.fill")
 
         // Do any additional setup after loading the view.
     }

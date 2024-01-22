@@ -8,20 +8,23 @@
 import UIKit
 
 final class TeamDetailsViewController: UIViewController {
-
+    
+    @IBOutlet var teamLabel: UILabel!
     @IBOutlet var projectLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
-    @IBOutlet var membersNumberLabel: UILabel!
+    @IBOutlet var membersLabel: UILabel!
     
     var team: Team!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        projectLabel.text = team.projectName
-        descriptionLabel.text = team.projectDescription
-        membersNumberLabel.text = team.maximumNumberOfDevelopers != nil ? "(\(team.developers.count) / \(team.maximumNumberOfDevelopers!)" : "-"
-    }
-    
-    @IBAction func joinTeamButtonTapped(_ sender: Any) {
+        teamLabel.text = "Название команды: \(team.name)"
+        projectLabel.text = "Название проекта: \(team.projectName)"
+        descriptionLabel.text = "Тема проекта: \(team.projectDescription)"
+  //      membersLabel.text = "Участники проекта: "
+        
+  //      @IBAction func joinTeamButtonTapped(_ sender: Any) {
+            
+        //}
     }
 }

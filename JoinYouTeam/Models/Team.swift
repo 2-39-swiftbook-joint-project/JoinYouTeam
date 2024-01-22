@@ -8,19 +8,21 @@
 final class Team {
     let name: String
     let projectName: String
-    let projectDescription: String?
+    let projectDescription: String
     let maximumNumberOfDevelopers: Int?
     var developers: [Developer] = []
     
     init(
         name: String,
         projectName: String,
-        projectDescription: String? = nil,
-        maximumNumberOfDevelopers: Int? = nil
+        projectDescription: String,
+        maximumNumberOfDevelopers: Int? = nil,
+        developers: [Developer]
     ) {
         self.name = name
         self.projectName = projectName
         self.projectDescription = projectDescription
         self.maximumNumberOfDevelopers = maximumNumberOfDevelopers
+        self.developers = developers
     }
 }
