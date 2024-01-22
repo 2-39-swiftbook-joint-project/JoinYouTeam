@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="h8P-Ar-cN5">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="fmd-CU-lK6" customClass="TestViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMO-zt-03W" customClass="Tes">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JA4-JT-CYa">
+                                <rect key="frame" x="16" y="60" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C11-JI-oLC">
+                                <rect key="frame" x="111.5" y="246.5" width="97" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-6K-mUx">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiA-LQ-cDG">
+                                        <rect key="frame" x="0.0" y="40.5" width="97" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Лог базы"/>
+                                        <connections>
+                                            <action selector="loggerButton:" destination="fmd-CU-lK6" eventType="touchUpInside" id="A0r-do-hqd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="roh-gS-LHc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C11-JI-oLC" firstAttribute="centerX" secondItem="bMO-zt-03W" secondAttribute="centerX" id="Xuf-so-cw0"/>
+                            <constraint firstItem="C11-JI-oLC" firstAttribute="centerY" secondItem="bMO-zt-03W" secondAttribute="centerY" id="Yp3-ra-qur"/>
+                            <constraint firstItem="JA4-JT-CYa" firstAttribute="leading" secondItem="roh-gS-LHc" secondAttribute="leading" constant="16" id="iDc-WS-yZO"/>
+                            <constraint firstItem="roh-gS-LHc" firstAttribute="trailing" secondItem="JA4-JT-CYa" secondAttribute="trailing" constant="16" id="pWf-gA-6CS"/>
+                            <constraint firstItem="JA4-JT-CYa" firstAttribute="top" secondItem="roh-gS-LHc" secondAttribute="top" constant="40" id="tIm-AF-xPx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jIp-bn-AIB"/>
+                    <connections>
+                        <outlet property="userLabel" destination="Wq0-6K-mUx" id="zHc-QZ-1dL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpu-fd-A4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		116A2A022B5E7C760042F1EE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A2A012B5E7C760042F1EE /* TestViewController.swift */; };
+		116A2A042B5E940B0042F1EE /* testSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116A2A032B5E940B0042F1EE /* testSB.storyboard */; };
 		116E67482B44B04500EFE496 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116E67472B44B04500EFE496 /* Creator.swift */; };
 		118677D32B5D6E5E007D49F4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118677D22B5D6E5E007D49F4 /* DataStore.swift */; };
 		118677D52B5D6E90007D49F4 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118677D42B5D6E90007D49F4 /* Developer.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		116A2A012B5E7C760042F1EE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		116A2A032B5E940B0042F1EE /* testSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = testSB.storyboard; sourceTree = "<group>"; };
 		116E67472B44B04500EFE496 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
 		118677D22B5D6E5E007D49F4 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		118677D42B5D6E90007D49F4 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				1D44F4602B5DE28100F9D4EA /* TeamSelectionTableViewController.swift */,
 				1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */,
 				1D44F4662B5DE47E00F9D4EA /* AboutMeViewController.swift */,
+				116A2A012B5E7C760042F1EE /* TestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -123,9 +128,10 @@
 		11E0E52B2B36D909003C5EB2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				11E0E51B2B36D797003C5EB2 /* Main.storyboard */,
-				118DD2002B5BDFEC00C3B843 /* AboutUsSB.storyboard */,
 				11E0E5202B36D798003C5EB2 /* LaunchScreen.storyboard */,
+				11E0E51B2B36D797003C5EB2 /* Main.storyboard */,
+				116A2A032B5E940B0042F1EE /* testSB.storyboard */,
+				118DD2002B5BDFEC00C3B843 /* AboutUsSB.storyboard */,
 				1D44F4342B5DCCDA00F9D4EA /* SelectionMenu.storyboard */,
 				1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */,
 			);
@@ -195,6 +201,7 @@
 				1D44F4652B5DE46B00F9D4EA /* AboutMe.storyboard in Resources */,
 				11E0E51F2B36D798003C5EB2 /* Assets.xcassets in Resources */,
 				11E0E51D2B36D797003C5EB2 /* Main.storyboard in Resources */,
+				116A2A042B5E940B0042F1EE /* testSB.storyboard in Resources */,
 				118DD2012B5BDFEC00C3B843 /* AboutUsSB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +223,7 @@
 				118677D32B5D6E5E007D49F4 /* DataStore.swift in Sources */,
 				1D44F4672B5DE47E00F9D4EA /* AboutMeViewController.swift in Sources */,
 				1D44F4632B5DE3E300F9D4EA /* TeamCreationViewController.swift in Sources */,
+				116A2A022B5E7C760042F1EE /* TestViewController.swift in Sources */,
 				11E0E5182B36D797003C5EB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
