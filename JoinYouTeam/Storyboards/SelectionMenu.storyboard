@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Selection Menu View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="SelectionMenuViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="avt-mU-CKA">
+                                <rect key="frame" x="16" y="152.5" width="288" height="163.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNR-G8-E4U">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Выбрать комнаду"/>
+                                        <connections>
+                                            <action selector="joinTeamButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8X7-5g-dKN"/>
+                                            <segue destination="4dz-ou-jio" kind="show" id="HEE-Lh-gHE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0t-VD-ApC">
+                                        <rect key="frame" x="0.0" y="64.5" width="288" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Создать команду"/>
+                                        <connections>
+                                            <action selector="createTeamButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pJr-4m-vNp"/>
+                                            <segue destination="cIB-4G-mbW" kind="show" id="Rgv-TB-clK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V37-Nz-DoZ">
+                                        <rect key="frame" x="0.0" y="129" width="288" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Распредели меня!"/>
+                                        <connections>
+                                            <action selector="randomTeamButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0I9-Ck-uRz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="avt-mU-CKA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="JPk-2F-g7m"/>
+                            <constraint firstItem="avt-mU-CKA" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-50" id="Qw5-yB-3Zk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="avt-mU-CKA" secondAttribute="trailing" constant="16" id="mYh-20-LLg"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="La5-rd-H83"/>
+                    <connections>
+                        <outlet property="createTeamButton" destination="t0t-VD-ApC" id="eyi-wY-nG8"/>
+                        <outlet property="joinTeamButton" destination="TNR-G8-E4U" id="2pD-gW-oID"/>
+                        <outlet property="randomTeamButton" destination="V37-Nz-DoZ" id="KnX-7i-fHY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1901" y="-35"/>
+        </scene>
+        <!--TeamSelectionTableViewController-->
+        <scene sceneID="lHs-5R-a5o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TeamSelection" referencedIdentifier="TeamSelectionTableViewController" id="4dz-ou-jio" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pwZ-7e-eef"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lro-pK-g5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="-154"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Izu-fh-S5E">
+            <objects>
+                <tabBarController storyboardIdentifier="SelectionMenuViewController" automaticallyAdjustsScrollViewInsets="NO" id="EyG-sz-AcV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3n-zL-KBV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="QGw-gM-35Q"/>
+                        <segue destination="YRg-Rz-bTV" kind="relationship" relationship="viewControllers" id="VsM-ba-IEt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEg-k7-SVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5" y="-34.859154929577464"/>
+        </scene>
+        <!--TeamCreationViewController-->
+        <scene sceneID="sKV-6E-b5T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TeamCreation" referencedIdentifier="TeamCreationViewController" id="cIB-4G-mbW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QwE-EM-n2s"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txN-1n-4Vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679" y="-92"/>
+        </scene>
+        <!--MyTeamViewController-->
+        <scene sceneID="RqW-Sz-oju">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyTeam" referencedIdentifier="MyTeamViewController" id="YRg-Rz-bTV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Qak-Xh-JGK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ix3-bI-Lje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="415"/>
         </scene>
     </scenes>
     <resources>

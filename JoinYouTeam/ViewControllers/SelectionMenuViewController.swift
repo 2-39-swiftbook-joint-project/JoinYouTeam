@@ -7,23 +7,23 @@
 
 import UIKit
 
-class SelectionMenuViewController: UIViewController {
-
+final class SelectionMenuViewController: UIViewController {
+    
+    
+    @IBOutlet var joinTeamButton: UIButton!
+    @IBOutlet var createTeamButton: UIButton!
+    @IBOutlet var randomTeamButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func joinTeamButtonTapped(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func createTeamButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func randomTeamButtonTapped(_ sender: Any) {
+    }
 }
