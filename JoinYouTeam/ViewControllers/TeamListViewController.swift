@@ -9,7 +9,7 @@ import UIKit
 
 final class TeamListViewController: UITableViewController {
     
-    private var teamList = DataStore.shared.teams
+    private var teamList = StorageManager.shared.getTeams()
     
     override func viewDidLoad() {
         super.viewDidLoad()
