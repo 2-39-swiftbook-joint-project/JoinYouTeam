@@ -34,7 +34,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
                                         <connections>
-                                            <segue destination="SZU-uX-Zvb" kind="show" id="FSA-jj-7RB"/>
+                                            <segue destination="zoR-fi-bSv" kind="show" id="UxY-SS-dHL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -77,34 +77,6 @@
             </objects>
             <point key="canvasLocation" x="1780" y="-260"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="50W-8e-JKp">
-            <objects>
-                <viewController id="SZU-uX-Zvb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="di7-ph-o7S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3f-3O-Bbd">
-                                <rect key="frame" x="136.5" y="273.5" width="47" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="zRk-9N-RTL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="c3f-3O-Bbd" firstAttribute="centerY" secondItem="di7-ph-o7S" secondAttribute="centerY" id="Jcw-Ep-fHU"/>
-                            <constraint firstItem="c3f-3O-Bbd" firstAttribute="centerX" secondItem="di7-ph-o7S" secondAttribute="centerX" id="Pt3-jV-kmB"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="gXH-Qz-Lpi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AJn-Ws-mC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1914" y="187"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mtm-hC-Q2T">
             <objects>
@@ -122,6 +94,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPh-ag-qec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.875" y="-2.112676056338028"/>
+        </scene>
+        <!--SelectionMenuViewController-->
+        <scene sceneID="vOK-2F-vy7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectionMenu" referencedIdentifier="SelectionMenuViewController" id="zoR-fi-bSv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="r0L-wo-Exf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAp-lM-I07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="45"/>
         </scene>
     </scenes>
     <resources>
