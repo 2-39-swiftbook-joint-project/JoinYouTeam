@@ -6,20 +6,20 @@
 //
 
 final class DataStore {
-    static let shared = DataStore()
+    fileprivate static let shared = DataStore()
     
     var developers: [Developer] = [
-        Developer(name: "TJ Holowaychuk", github: "@visionmedia"),
-        Developer(name: "Yo-An Lin", github: "@c9s"),
-        Developer(name: "Fabien Potencier", github: "@fabpot", team: nil),
-        Developer(name: "Matthew Weier O'Phinney", github: "@weierophinney"),
-        Developer(name: "Dane Springmeyer", github: "@springmeyer"),
-        Developer(name: "David Cramer", github: "@dcramer", team: nil),
-        Developer(name: "Jerome Etienne", github: "@jeromeetienne"),
-        Developer(name: "Thibault Duplessis", github: "@ornicar"),
-        Developer(name: "Dav Glass", github: "@davglass"),
-        Developer(name: "Postmodern", github: "@postmodern"),
-        Developer(name: "Nikita", github: "@nikmosyl", team: nil)
+        Developer(name: "TJ Holowaychuk", github: "visionmedia"),
+        Developer(name: "Yo-An Lin", github: "c9s"),
+        Developer(name: "Fabien Potencier", github: "fabpot", team: nil),
+        Developer(name: "Matthew Weier O'Phinney", github: "weierophinney"),
+        Developer(name: "Dane Springmeyer", github: "springmeyer"),
+        Developer(name: "David Cramer", github: "dcramer", team: nil),
+        Developer(name: "Jerome Etienne", github: "jeromeetienne"),
+        Developer(name: "Thibault Duplessis", github: "ornicar"),
+        Developer(name: "Dav Glass", github: "davglass"),
+        Developer(name: "Postmodern", github: "postmodern"),
+        Developer(name: "Nikita", github: "nikmosyl", team: nil)
     ]
     
     var teams: [Team] = [
@@ -55,7 +55,7 @@ final class StorageManager {
     
     private init() {}
     
-    func addDeveloper(developer: Developer) -> Bool {
+    @discardableResult func addDeveloper(developer: Developer) -> Bool {
         for item in dataStore.developers {
             if item.github == developer.github {
                 return false
@@ -65,7 +65,7 @@ final class StorageManager {
         return true
     }
     
-    func addTeam(team: Team) -> Bool {
+    @discardableResult func addTeam(team: Team) -> Bool {
         for item in dataStore.teams {
             if item.name == team.name {
                 return false
