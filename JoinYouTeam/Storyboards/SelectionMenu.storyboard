@@ -101,7 +101,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="TeamSelectionTableViewController" id="2Ef-XT-BON" customClass="TeamListViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4ys-bV-Md8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -133,9 +133,9 @@
         <!--Команда-->
         <scene sceneID="chR-Sk-kGb">
             <objects>
-                <viewController id="sBn-Qe-31t" customClass="TeamViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sBn-Qe-31t" customClass="TeamDetailsViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQi-kh-FjV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5Z0-VU-0yT">
@@ -226,7 +226,7 @@
             <objects>
                 <viewController storyboardIdentifier="TeamCreationViewController" id="wDd-dy-4oe" customClass="TeamCreationViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKB-dq-PHV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fqB-Hp-Cze">

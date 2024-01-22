@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TeamViewController: UIViewController {
+final class TeamDetailsViewController: UIViewController {
 
     @IBOutlet var projectLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!

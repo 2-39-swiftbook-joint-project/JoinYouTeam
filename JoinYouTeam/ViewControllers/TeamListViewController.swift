@@ -18,7 +18,9 @@ final class TeamListViewController: UITableViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        let detailsVC = segue.destination as? TeamDetailsViewController
+        detailsVC?.team = teamList[indexPath.row]
     }
 }
 
@@ -39,13 +41,5 @@ extension TeamListViewController {
         
         cell.contentConfiguration = content
         return cell
-    }
-}
-
-// MARK: - UITableViewDelegate
-extension TeamListViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let team = teamList[indexPath.row]
-        performSegue(withIdentifier: "showDetails", sender: team)
     }
 }
