@@ -14,7 +14,7 @@ final class TeamDetailsViewController: UIViewController {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var membersLabel: UILabel!
     
-    var team: Team!
+    var team: Team! = Team(name: "test", projectName: "TEST")
     
     override func viewDidLoad() {
         super.viewDidLoad()

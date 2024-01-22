@@ -6,7 +6,7 @@
 //
 
 final class DataStore {
-    static let shared = DataStore()
+    fileprivate static let shared = DataStore()
     
     var developers: [Developer] = [
         Developer(name: "TJ Holowaychuk", github: "@visionmedia"),
@@ -82,7 +82,7 @@ final class StorageManager {
     
     private init() {}
     
-    func addDeveloper(developer: Developer) -> Bool {
+    @discardableResult func addDeveloper(developer: Developer) -> Bool {
         for item in dataStore.developers {
             if item.github == developer.github {
                 return false
@@ -92,7 +92,7 @@ final class StorageManager {
         return true
     }
     
-    func addTeam(team: Team) -> Bool {
+    @discardableResult func addTeam(team: Team) -> Bool {
         for item in dataStore.teams {
             if item.name == team.name {
                 return false
