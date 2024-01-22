@@ -37,7 +37,11 @@ final class LoginViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if user != nil {
+        if identifier == "aboutUsSegue" {
+            return true
+        }
+        if !name.isEmpty && !github.isEmpty {
+            user = Developer(name: name, github: github)
             return true
         } else {
             showAlert(title: "Хм", message: "Нужно заполнить оба поля")
@@ -87,7 +91,6 @@ extension LoginViewController: UITextFieldDelegate {
                 }
             } else {
                 loginButton.setTitle("Зарегистрироваться", for: .normal)
-                user = Developer(name: name, github: github)
             }
         }
     }

@@ -57,7 +57,7 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="F9I-nc-7Jz"/>
                         <barButtonItem key="rightBarButtonItem" title="О разработчиках" id="JRX-o1-QX7">
                             <connections>
-                                <segue destination="Vva-vy-t8k" kind="show" id="Lra-LU-p6s"/>
+                                <segue destination="Vva-vy-t8k" kind="show" identifier="aboutUsSegue" id="Lra-LU-p6s"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -99,13 +99,13 @@
             </objects>
             <point key="canvasLocation" x="46.875" y="-2.112676056338028"/>
         </scene>
-        <!--TestViewController-->
+        <!--SelectionMenuViewController-->
         <scene sceneID="3bJ-0n-WaW">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TestViewController" storyboardName="testSB" referencedIdentifier="TestViewController" id="SJg-3Y-6CY" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jh8-0q-UrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="SelectionMenuViewController" storyboardName="SelectionMenu" referencedIdentifier="SelectionMenuViewController" id="SJg-3Y-6CY" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tXe-bG-9wN"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jh8-0q-UrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1762" y="165"/>
         </scene>
