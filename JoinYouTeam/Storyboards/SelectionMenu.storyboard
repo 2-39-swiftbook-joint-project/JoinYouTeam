@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Selection Menu View Controller-->
+        <!--Команды-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SelectionMenuViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectionMenuViewController" title="Команды" id="Y6W-OH-hqX" customClass="SelectionMenuViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,41 +67,12 @@
             </objects>
             <point key="canvasLocation" x="1901" y="-35"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Izu-fh-S5E">
-            <objects>
-                <tabBarController storyboardIdentifier="SelectionMenuViewController" automaticallyAdjustsScrollViewInsets="NO" id="EyG-sz-AcV" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3n-zL-KBV">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="QGw-gM-35Q"/>
-                        <segue destination="YRg-Rz-bTV" kind="relationship" relationship="viewControllers" id="VsM-ba-IEt"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bEg-k7-SVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1117.5" y="-34.859154929577464"/>
-        </scene>
-        <!--AboutMeViewController-->
-        <scene sceneID="RqW-Sz-oju">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AboutMe" referencedIdentifier="AboutMeViewController" id="YRg-Rz-bTV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Qak-Xh-JGK"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ix3-bI-Lje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1531" y="460"/>
-        </scene>
         <!--Список команд-->
         <scene sceneID="S8l-OQ-aZB">
             <objects>
                 <tableViewController storyboardIdentifier="TeamSelectionTableViewController" id="2Ef-XT-BON" customClass="TeamListViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4ys-bV-Md8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -135,7 +106,7 @@
             <objects>
                 <viewController id="sBn-Qe-31t" customClass="TeamDetailsViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQi-kh-FjV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5Z0-VU-0yT">
@@ -226,7 +197,7 @@
             <objects>
                 <viewController storyboardIdentifier="TeamCreationViewController" id="wDd-dy-4oe" customClass="TeamCreationViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKB-dq-PHV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fqB-Hp-Cze">

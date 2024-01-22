@@ -16,7 +16,7 @@ final class LoginViewController: UIViewController {
     
     // MARK: - Private Properties
     private let storageManager = StorageManager.shared
-    private var user: Developer?
+    private var user: Developer!
     private var name: String = ""
     private var github: String = ""
     
@@ -40,8 +40,11 @@ final class LoginViewController: UIViewController {
         if identifier == "aboutUsSegue" {
             return true
         }
+        name = nameTF.text ?? ""
+        github = githubTF.text ?? ""
         if !name.isEmpty && !github.isEmpty {
             user = Developer(name: name, github: github)
+            storageManager.addDeveloper(developer: user)
             return true
         } else {
             showAlert(title: "Хм", message: "Нужно заполнить оба поля")
@@ -50,12 +53,13 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let testVC = segue.destination as? TestViewController {
-            if let user {
-                storageManager.addDeveloper(developer: user)
-                testVC.user = user
-            }
-        }
+//        let tabBarVC = segue.destination as? UITabBarController
+//        
+//        tabBarVC?.viewControllers?.forEach { viewController in
+//            if let selectionVS = viewController as? SelectionMenuViewController {
+//            }
+//            
+//        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
