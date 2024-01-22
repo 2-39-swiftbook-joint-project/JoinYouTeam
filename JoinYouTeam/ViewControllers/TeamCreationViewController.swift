@@ -7,8 +7,13 @@
 
 import UIKit
 
-class TeamCreationViewController: UIViewController {
+final class TeamCreationViewController: UIViewController {
 
+    @IBOutlet var teamTF: UITextField!
+    @IBOutlet var projectTF: UITextField!
+    @IBOutlet var subjectTF: UITextField!
+    @IBOutlet var membersNumberTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
