@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="unV-e7-PBa">
-                                <rect key="frame" x="16" y="257" width="288" height="84"/>
+                                <rect key="frame" x="16" y="217" width="288" height="134.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glc-pm-Y1i">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
@@ -29,28 +29,24 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcH-Cc-1ng">
+                                        <rect key="frame" x="0.0" y="100" width="288" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
+                                        <connections>
+                                            <segue destination="SJg-3Y-6CY" kind="show" id="tR5-sf-yMY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcH-Cc-1ng">
-                                <rect key="frame" x="16" y="437" width="288" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
-                                <connections>
-                                    <segue destination="SJg-3Y-6CY" kind="show" id="tR5-sf-yMY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="unV-e7-PBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0VQ-Rh-Je4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AcH-Cc-1ng" secondAttribute="bottom" multiplier="5:4.15" id="7Wm-52-fuo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="unV-e7-PBa" secondAttribute="bottom" multiplier="3:1.8" id="8TB-Gf-WV1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="unV-e7-PBa" secondAttribute="trailing" constant="16" id="Pf8-mi-5cH"/>
-                            <constraint firstItem="AcH-Cc-1ng" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iAl-5W-kLg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AcH-Cc-1ng" secondAttribute="trailing" constant="16" id="mkT-XR-Dlv"/>
+                            <constraint firstItem="unV-e7-PBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kbA-Ne-3LZ"/>
                             <constraint firstItem="unV-e7-PBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="py5-T0-vE7"/>
-                            <constraint firstItem="AcH-Cc-1ng" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrV-hl-RnS"/>
+                            <constraint firstItem="unV-e7-PBa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wP5-nj-Rgc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Привет!" id="Odd-PZ-pAs">

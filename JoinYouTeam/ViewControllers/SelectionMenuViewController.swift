@@ -9,13 +9,22 @@ import UIKit
 
 final class SelectionMenuViewController: UIViewController {
     
+    var user: Developer!
+    
+    @IBOutlet var joinTeamButton: UIButton!
+    @IBOutlet var createTeamButton: UIButton!
     @IBOutlet var randomTeamButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func randomTeamButtonTapped() {
-        
+    @IBAction func joinTeamButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func createTeamButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func randomTeamButtonTapped(_ sender: Any) {
     }
 }
