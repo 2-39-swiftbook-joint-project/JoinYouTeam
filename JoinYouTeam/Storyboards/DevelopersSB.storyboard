@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gGI-lv-rST" kind="show" id="ahU-3T-iv4"/>
+                                    <segue destination="SPS-i1-Bxf" kind="show" id="N0V-yZ-jdO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,20 +57,99 @@
             </objects>
             <point key="canvasLocation" x="1863.75" y="21.12676056338028"/>
         </scene>
-        <!--Developer View Controller-->
-        <scene sceneID="7QQ-Ba-Kw4">
+        <!--Разработчик:-->
+        <scene sceneID="KVv-hv-sd3">
             <objects>
-                <viewController id="gGI-lv-rST" customClass="DeveloperViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="77u-fL-A7w">
+                <viewController title="Разработчик:" id="SPS-i1-Bxf" customClass="DeveloperViewController" customModule="JoinYouTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GPg-K5-SPS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="9hE-KL-XZZ"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="48c-Me-i29">
+                                <rect key="frame" x="16" y="20" width="288" height="151.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FHR-HQ-kwg">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYH-mg-FtH">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uy2-jG-3Fj">
+                                                <rect key="frame" x="149" y="0.0" width="139" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0oY-od-yqz">
+                                        <rect key="frame" x="0.0" y="39" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Lc-wqx">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1n7-1w-Z5x">
+                                                <rect key="frame" x="154" y="0.0" width="134" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Id6-b7-eAM">
+                                        <rect key="frame" x="0.0" y="78" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Команда:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1X-gW-M7o">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhb-ed-hXu">
+                                                <rect key="frame" x="149" y="0.0" width="139" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vv-Lc-awx">
+                                        <rect key="frame" x="0.0" y="117" width="288" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Пригласить"/>
+                                        <connections>
+                                            <action selector="inviteButtonAction" destination="SPS-i1-Bxf" eventType="touchUpInside" id="Pzn-uW-Z4H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d3f-C8-aGU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d3f-C8-aGU" firstAttribute="trailing" secondItem="48c-Me-i29" secondAttribute="trailing" constant="16" id="IPS-As-ZxL"/>
+                            <constraint firstItem="48c-Me-i29" firstAttribute="leading" secondItem="d3f-C8-aGU" secondAttribute="leading" constant="16" id="eVf-j5-GE6"/>
+                            <constraint firstItem="48c-Me-i29" firstAttribute="top" secondItem="d3f-C8-aGU" secondAttribute="top" constant="20" id="q3b-QZ-ldN"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Команда" id="DOy-aF-OnE"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="githubLabel" destination="1n7-1w-Z5x" id="OhW-dg-veT"/>
+                        <outlet property="nameLabel" destination="uy2-jG-3Fj" id="gg8-VS-btr"/>
+                        <outlet property="teamLabel" destination="mhb-ed-hXu" id="At4-To-GYC"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpp-VI-ARU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eh0-gT-lE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2724" y="21"/>
+            <point key="canvasLocation" x="2685" y="21"/>
         </scene>
     </scenes>
     <resources>

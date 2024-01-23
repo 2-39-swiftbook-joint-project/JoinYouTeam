@@ -31,7 +31,9 @@ final class TeamViewController: UIViewController {
     
     @IBAction func unwind(for segua: UIStoryboardSegue) {
         let changeVC = segua.source as? TeamChangeViewController
-        team.projectDescription = changeVC?.themeTF.text ?? "Не назначено"
+        team.projectDescription = changeVC?.themeTF.text == ""
+            ? "Не назначено"
+            : changeVC?.themeTF.text
         updateInformation()
     }
     
@@ -75,19 +77,12 @@ final class TeamViewController: UIViewController {
         let developers = team.developers.count == 0
             ? ["Не назначены"]
             : team.developers.map { developer in
-                "\(developer.name) - \(developer.github)"
+                "\(developer.name) - @\(developer.github)"
             }
         developersLabel.text = developers.reduce("", { $0 + "\($1)\n" })
         if team.developers.map({ developer in developer.github }).contains(user.github) {
             joinButton.setTitle("Изменить", for: .normal)
         }
-    }
-    
-    private func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "ОК", style: .default)
-        alert.addAction(okAction)
-        present(alert, animated: true)
     }
 }
 

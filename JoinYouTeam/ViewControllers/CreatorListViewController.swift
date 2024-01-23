@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreatorListViewController: UITableViewController {
+final class CreatorListViewController: UITableViewController {
     
     private let creators = StorageManager.shared.getCreators()
 
@@ -35,5 +35,9 @@ extension CreatorListViewController {
         content.secondaryTextProperties.font = UIFont.systemFont(ofSize: 14)
         cell.contentConfiguration = content
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

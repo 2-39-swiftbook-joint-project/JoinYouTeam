@@ -68,11 +68,6 @@ final class LoginViewController: UIViewController {
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
     //MARK: - Private Methods
     private func validateUser(name: String, github: String) -> UserStatus {
         if !name.isEmpty && !github.isEmpty {
@@ -90,12 +85,22 @@ final class LoginViewController: UIViewController {
             return UserStatus.empty
         }
     }
-    
-    private func showAlert(title: String, message: String) {
+}
+
+
+//MARK: - UIViewController
+
+extension UIViewController {
+    func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "ОК", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
 }
 

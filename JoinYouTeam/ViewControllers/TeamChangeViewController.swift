@@ -7,9 +7,10 @@
 
 import UIKit
 
-class TeamChangeViewController: UIViewController {
+final class TeamChangeViewController: UIViewController {
     
     @IBOutlet var themeTF: UITextField!
+    
     var team: Team!
 
     override func viewDidLoad() {
@@ -17,7 +18,7 @@ class TeamChangeViewController: UIViewController {
         title = team.name
     }
     
-    @IBAction func doneButtonAction() {
+    @IBAction private func doneButtonAction() {
         dismiss(animated: true)
     }
 

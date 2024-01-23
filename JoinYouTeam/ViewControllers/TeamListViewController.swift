@@ -9,12 +9,16 @@ import UIKit
 
 final class TeamListViewController: UITableViewController {
     
-    private let teams = StorageManager.shared.getTeams()
+    private var teams: [Team] = []
     var user: Developer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 60
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        teams = StorageManager.shared.getTeams()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

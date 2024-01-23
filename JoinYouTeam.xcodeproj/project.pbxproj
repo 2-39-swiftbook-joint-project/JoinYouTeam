@@ -29,7 +29,6 @@
 		1D44F4352B5DCCDA00F9D4EA /* TeamsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44F4342B5DCCDA00F9D4EA /* TeamsSB.storyboard */; };
 		1D44F4612B5DE28100F9D4EA /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F4602B5DE28100F9D4EA /* TeamListViewController.swift */; };
 		1D44F4632B5DE3E300F9D4EA /* TeamCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */; };
-		1D44F4652B5DE46B00F9D4EA /* AboutMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */; };
 		1DEDD76C2B5E6DB4004140A8 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD76B2B5E6DB4004140A8 /* TeamViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		1D44F4342B5DCCDA00F9D4EA /* TeamsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamsSB.storyboard; sourceTree = "<group>"; };
 		1D44F4602B5DE28100F9D4EA /* TeamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
 		1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCreationViewController.swift; sourceTree = "<group>"; };
-		1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutMe.storyboard; sourceTree = "<group>"; };
 		1DEDD76B2B5E6DB4004140A8 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +154,6 @@
 				116A2A092B5ED28F0042F1EE /* DevelopersSB.storyboard */,
 				1D44F4342B5DCCDA00F9D4EA /* TeamsSB.storyboard */,
 				116A2A072B5ED2130042F1EE /* UserSB.storyboard */,
-				1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 			files = (
 				11E0E5222B36D798003C5EB2 /* LaunchScreen.storyboard in Resources */,
 				1D44F4352B5DCCDA00F9D4EA /* TeamsSB.storyboard in Resources */,
-				1D44F4652B5DE46B00F9D4EA /* AboutMe.storyboard in Resources */,
 				11E0E51F2B36D798003C5EB2 /* Assets.xcassets in Resources */,
 				116A2A082B5ED2130042F1EE /* UserSB.storyboard in Resources */,
 				11E0E51D2B36D797003C5EB2 /* Main.storyboard in Resources */,
