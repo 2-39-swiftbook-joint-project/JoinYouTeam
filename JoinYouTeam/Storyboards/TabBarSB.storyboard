@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="925" y="-166"/>
         </scene>
-        <!--SelectionMenuViewController-->
+        <!--TeamsStoryBoard-->
         <scene sceneID="9fD-Q0-g2r">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SelectionMenuViewController" storyboardName="SelectionMenu" referencedIdentifier="SelectionMenuViewController" id="SBZ-yZ-UbL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="TeamsStoryBoard" storyboardName="TeamsSB" referencedIdentifier="TeamsStoryBoard" id="SBZ-yZ-UbL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Команды" id="wsQ-l5-WqM">
                         <imageReference key="image" image="person.2.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>

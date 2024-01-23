@@ -9,37 +9,39 @@ import UIKit
 
 final class TeamListViewController: UITableViewController {
     
-    private var teamList = StorageManager.shared.getTeams()
-    
+    private let teams = StorageManager.shared.getTeams()
+    var user: Developer!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 60
     }
-
-    // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = tableView.indexPathForSelectedRow else {return}
-        let detailsVC = segue.destination as? TeamDetailsViewController
-        detailsVC?.team = teamList[indexPath.row]
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let teamVC = segue.destination as? TeamViewController
+        teamVC?.team = teams[indexPath.row]
+        teamVC?.user = user
     }
 }
 
-// MARK: - UITableViewDataSource
+//MARK: - UITableViewDataSource
 extension TeamListViewController {
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        teamList.count
+        teams.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath)
-        let team = teamList[indexPath.row]
-        
+        let team = teams[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = team.name
+        content.textProperties.font = UIFont.systemFont(ofSize: 20)
         content.secondaryText = team.projectName
-        
+        content.secondaryTextProperties.font = UIFont.systemFont(ofSize: 12)
         cell.contentConfiguration = content
         return cell
     }
 }
+

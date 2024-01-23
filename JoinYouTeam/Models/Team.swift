@@ -8,7 +8,7 @@
 final class Team {
     let name: String
     let projectName: String
-    let projectDescription: String?
+    var projectDescription: String?
     let maximumNumberOfDevelopers: Int?
     var developers: [Developer] = []
     

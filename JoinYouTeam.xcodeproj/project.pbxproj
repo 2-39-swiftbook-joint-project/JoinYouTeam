@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1121AE0F2B5F6D0100301DE3 /* TeamChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AE0E2B5F6D0100301DE3 /* TeamChangeViewController.swift */; };
 		1136EEAB2B5F0CF2008326BA /* CreatorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEAA2B5F0CF2008326BA /* CreatorListViewController.swift */; };
 		1136EEAD2B5F1C44008326BA /* DeveloperListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEAC2B5F1C44008326BA /* DeveloperListViewController.swift */; };
 		1136EEAF2B5F2A61008326BA /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136EEAE2B5F2A61008326BA /* DeveloperViewController.swift */; };
@@ -25,16 +26,15 @@
 		11E0E51D2B36D797003C5EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E0E51B2B36D797003C5EB2 /* Main.storyboard */; };
 		11E0E51F2B36D798003C5EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E0E51E2B36D798003C5EB2 /* Assets.xcassets */; };
 		11E0E5222B36D798003C5EB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E0E5202B36D798003C5EB2 /* LaunchScreen.storyboard */; };
-		1D44F4352B5DCCDA00F9D4EA /* SelectionMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44F4342B5DCCDA00F9D4EA /* SelectionMenu.storyboard */; };
-		1D44F4392B5DCCFB00F9D4EA /* SelectionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F4382B5DCCFB00F9D4EA /* SelectionMenuViewController.swift */; };
+		1D44F4352B5DCCDA00F9D4EA /* TeamsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44F4342B5DCCDA00F9D4EA /* TeamsSB.storyboard */; };
 		1D44F4612B5DE28100F9D4EA /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F4602B5DE28100F9D4EA /* TeamListViewController.swift */; };
 		1D44F4632B5DE3E300F9D4EA /* TeamCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */; };
 		1D44F4652B5DE46B00F9D4EA /* AboutMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */; };
-		1D44F4672B5DE47E00F9D4EA /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D44F4662B5DE47E00F9D4EA /* AboutMeViewController.swift */; };
-		1DEDD76C2B5E6DB4004140A8 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD76B2B5E6DB4004140A8 /* TeamDetailsViewController.swift */; };
+		1DEDD76C2B5E6DB4004140A8 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDD76B2B5E6DB4004140A8 /* TeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1121AE0E2B5F6D0100301DE3 /* TeamChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamChangeViewController.swift; sourceTree = "<group>"; };
 		1136EEAA2B5F0CF2008326BA /* CreatorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorListViewController.swift; sourceTree = "<group>"; };
 		1136EEAC2B5F1C44008326BA /* DeveloperListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperListViewController.swift; sourceTree = "<group>"; };
 		1136EEAE2B5F2A61008326BA /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
@@ -55,13 +55,11 @@
 		11E0E51E2B36D798003C5EB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E0E5212B36D798003C5EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E0E5232B36D798003C5EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D44F4342B5DCCDA00F9D4EA /* SelectionMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectionMenu.storyboard; sourceTree = "<group>"; };
-		1D44F4382B5DCCFB00F9D4EA /* SelectionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionMenuViewController.swift; sourceTree = "<group>"; };
+		1D44F4342B5DCCDA00F9D4EA /* TeamsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamsSB.storyboard; sourceTree = "<group>"; };
 		1D44F4602B5DE28100F9D4EA /* TeamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
 		1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCreationViewController.swift; sourceTree = "<group>"; };
 		1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutMe.storyboard; sourceTree = "<group>"; };
-		1D44F4662B5DE47E00F9D4EA /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
-		1DEDD76B2B5E6DB4004140A8 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
+		1DEDD76B2B5E6DB4004140A8 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +73,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1121AE0D2B5F500200301DE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				118677D22B5D6E5E007D49F4 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		116E67492B44B05200EFE496 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				116E67472B44B04500EFE496 /* Creator.swift */,
-				118677D22B5D6E5E007D49F4 /* DataStore.swift */,
 				118677D42B5D6E90007D49F4 /* Developer.swift */,
 				118677D62B5D6E9A007D49F4 /* Team.swift */,
 			);
@@ -108,6 +113,7 @@
 				11E0E52A2B36D8F7003C5EB2 /* ViewControllers */,
 				11E0E52B2B36D909003C5EB2 /* Storyboards */,
 				116E67492B44B05200EFE496 /* Models */,
+				1121AE0D2B5F500200301DE3 /* Services */,
 				11E0E5292B36D8EC003C5EB2 /* App */,
 				11E0E51E2B36D798003C5EB2 /* Assets.xcassets */,
 			);
@@ -127,15 +133,14 @@
 		11E0E52A2B36D8F7003C5EB2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				11E0E5192B36D797003C5EB2 /* LoginViewController.swift */,
-				1D44F4382B5DCCFB00F9D4EA /* SelectionMenuViewController.swift */,
-				1D44F4602B5DE28100F9D4EA /* TeamListViewController.swift */,
-				1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */,
-				1D44F4662B5DE47E00F9D4EA /* AboutMeViewController.swift */,
-				1DEDD76B2B5E6DB4004140A8 /* TeamDetailsViewController.swift */,
 				1136EEAA2B5F0CF2008326BA /* CreatorListViewController.swift */,
+				11E0E5192B36D797003C5EB2 /* LoginViewController.swift */,
 				1136EEAC2B5F1C44008326BA /* DeveloperListViewController.swift */,
 				1136EEAE2B5F2A61008326BA /* DeveloperViewController.swift */,
+				1D44F4602B5DE28100F9D4EA /* TeamListViewController.swift */,
+				1DEDD76B2B5E6DB4004140A8 /* TeamViewController.swift */,
+				1D44F4622B5DE3E300F9D4EA /* TeamCreationViewController.swift */,
+				1121AE0E2B5F6D0100301DE3 /* TeamChangeViewController.swift */,
 				1136EEB02B5F2D7F008326BA /* UserViewController.swift */,
 			);
 			path = ViewControllers;
@@ -149,7 +154,7 @@
 				11E0E51B2B36D797003C5EB2 /* Main.storyboard */,
 				116A2A052B5ECF0C0042F1EE /* TabBarSB.storyboard */,
 				116A2A092B5ED28F0042F1EE /* DevelopersSB.storyboard */,
-				1D44F4342B5DCCDA00F9D4EA /* SelectionMenu.storyboard */,
+				1D44F4342B5DCCDA00F9D4EA /* TeamsSB.storyboard */,
 				116A2A072B5ED2130042F1EE /* UserSB.storyboard */,
 				1D44F4642B5DE46B00F9D4EA /* AboutMe.storyboard */,
 			);
@@ -215,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E0E5222B36D798003C5EB2 /* LaunchScreen.storyboard in Resources */,
-				1D44F4352B5DCCDA00F9D4EA /* SelectionMenu.storyboard in Resources */,
+				1D44F4352B5DCCDA00F9D4EA /* TeamsSB.storyboard in Resources */,
 				1D44F4652B5DE46B00F9D4EA /* AboutMe.storyboard in Resources */,
 				11E0E51F2B36D798003C5EB2 /* Assets.xcassets in Resources */,
 				116A2A082B5ED2130042F1EE /* UserSB.storyboard in Resources */,
@@ -237,16 +242,15 @@
 				1136EEB12B5F2D7F008326BA /* UserViewController.swift in Sources */,
 				1136EEAD2B5F1C44008326BA /* DeveloperListViewController.swift in Sources */,
 				1136EEAF2B5F2A61008326BA /* DeveloperViewController.swift in Sources */,
-				1DEDD76C2B5E6DB4004140A8 /* TeamDetailsViewController.swift in Sources */,
+				1DEDD76C2B5E6DB4004140A8 /* TeamViewController.swift in Sources */,
+				1121AE0F2B5F6D0100301DE3 /* TeamChangeViewController.swift in Sources */,
 				1136EEAB2B5F0CF2008326BA /* CreatorListViewController.swift in Sources */,
 				116E67482B44B04500EFE496 /* Creator.swift in Sources */,
-				1D44F4392B5DCCFB00F9D4EA /* SelectionMenuViewController.swift in Sources */,
 				118677D72B5D6E9A007D49F4 /* Team.swift in Sources */,
 				11E0E51A2B36D797003C5EB2 /* LoginViewController.swift in Sources */,
 				1D44F4612B5DE28100F9D4EA /* TeamListViewController.swift in Sources */,
 				11E0E5162B36D797003C5EB2 /* AppDelegate.swift in Sources */,
 				118677D32B5D6E5E007D49F4 /* DataStore.swift in Sources */,
-				1D44F4672B5DE47E00F9D4EA /* AboutMeViewController.swift in Sources */,
 				1D44F4632B5DE3E300F9D4EA /* TeamCreationViewController.swift in Sources */,
 				11E0E5182B36D797003C5EB2 /* SceneDelegate.swift in Sources */,
 			);

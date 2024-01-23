@@ -57,7 +57,7 @@ final class LoginViewController: UIViewController {
         
         tabBarVC?.viewControllers?.forEach { viewController in
             switch viewController {
-            case let selectionVS as SelectionMenuViewController:
+            case let selectionVS as TeamListViewController:
                 selectionVS.user = user
             case let userVC as UserViewController:
                 userVC.user = user
